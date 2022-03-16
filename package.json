@@ -2,7 +2,8 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "prod": "vite build"
+        "prod": "vite build",
+        "heroku-postbuild": "npm run prod"
     },
     "devDependencies": {
         "@vitejs/plugin-vue": "^2.2.4",
