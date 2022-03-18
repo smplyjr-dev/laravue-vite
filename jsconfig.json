@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@Components/*": ["resources/js/components/*"],
+      "@Node/*": ["node_modules/*"],
+      "@Public/*": ["public/*"],
+      "@Scripts/*": ["resources/js/*"],
+      "@Pages/*": ["resources/js/pages/*"],
+      "@CDT/*": ["/resources/js/components/datatable/client/index.js"],
+      "@SDT/*": ["/resources/js/components/datatable/server/index.js"],
+      "@Styles/*": ["resources/sass/*"],
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "typeAcquisition": {
+    "exclude": [
+      "dotenv"
+    ]
+  }
+}
