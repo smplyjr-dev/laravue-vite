@@ -8,13 +8,22 @@
 
     <title>Laravel</title>
 
-    {{ vite_assets() }}
+    {{ hViteAssets() }}
 
 </head>
 
 <body>
 
     <div id="app"></div>
+
+    <script src="https://unpkg.com/lodash@4.17.21/lodash.min.js"></script>
+    <script>
+        window.$APP = {
+            ENV: "{{ config('app.env') }}",
+            BASE_URL: "{{ url('/') }}",
+            CSRF_TOKEN: "{{ csrf_token() }}",
+        }
+    </script>
 
 </body>
 

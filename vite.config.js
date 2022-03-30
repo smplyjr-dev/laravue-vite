@@ -1,5 +1,5 @@
-const vue = require("@vitejs/plugin-vue");
 const path = require("path");
+const vue = require("@vitejs/plugin-vue");
 
 export default ({ command }) => ({
   base: command === "serve" ? "" : "/build/",

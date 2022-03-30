@@ -2,8 +2,18 @@
 
 use Illuminate\Support\HtmlString;
 
-if (!function_exists('vite_assets')) {
-    function vite_assets(): HtmlString
+if (!function_exists('hIsEnv')) {
+    /**
+     * @param String $key String to get
+     */
+    function hIsEnv($key)
+    {
+        return config('app.env') == $key;
+    }
+}
+
+if (!function_exists('hViteAssets')) {
+    function hViteAssets(): HtmlString
     {
         if (env('APP_ENV') == 'local') {
             return new HtmlString('
