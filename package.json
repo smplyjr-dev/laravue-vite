@@ -3,7 +3,7 @@
     "scripts": {
         "watch": "vite",
         "prod": "vite build",
-        "heroku-postbuild": "npm run prod"
+        "heroku-postbuild": "npm install && npm run prod"
     },
     "devDependencies": {
         "@vitejs/plugin-vue": "^2.3.0",
