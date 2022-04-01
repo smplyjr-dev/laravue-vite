@@ -1,10 +1,13 @@
 import { createApp } from "vue";
-import router from "@Scripts/routes";
-
 import App from "./App.vue";
-import "../sass/app.scss";
+import Portal from "vue3-portal";
+import Router from "./router";
+import "./plugins";
+import "./../sass/app.scss";
 
 // prettier-ignore
-createApp(App)
-  .use(router)
-  .mount("#app");
+const app = createApp(App)
+app.use(Portal);
+app.use(Router);
+// router.app = app;
+app.mount("#app");

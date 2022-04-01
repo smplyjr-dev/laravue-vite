@@ -16,7 +16,6 @@
 
     <div id="app"></div>
 
-    <script src="https://unpkg.com/lodash@4.17.21/lodash.min.js"></script>
     <script>
         window.$APP = {
             ENV: "{{ config('app.env') }}",
@@ -24,6 +23,16 @@
             CSRF_TOKEN: "{{ csrf_token() }}",
         }
     </script>
+
+    @if (hIsEnv('local'))
+        <script src="https://js.pusher.com/7.0/pusher.js"></script>
+        <script src="https://unpkg.com/axios@0.26.1/dist/axios.js"></script>
+        <script src="https://unpkg.com/lodash@4.17.21/lodash.js"></script>
+    @else
+        <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
+        <script src="https://unpkg.com/axios@0.26.1/dist/axios.min.js"></script>
+        <script src="https://unpkg.com/lodash@4.17.21/lodash.min.js"></script>
+    @endif
 
 </body>
 

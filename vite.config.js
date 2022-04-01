@@ -1,5 +1,6 @@
 const path = require("path");
 const vue = require("@vitejs/plugin-vue");
+import ViteRequireContext from "@originjs/vite-plugin-require-context";
 
 export default ({ command }) => ({
   base: command === "serve" ? "" : "/build/",
@@ -23,7 +24,8 @@ export default ({ command }) => ({
         }
       }
     },
-    vue()
+    vue(),
+    ViteRequireContext(),
   ],
   resolve: {
     alias: {

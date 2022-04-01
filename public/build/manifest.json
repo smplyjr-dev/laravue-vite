@@ -1,0 +1,39 @@
+{
+  "resources/js/app.js": {
+    "file": "assets/app.39361cd1.js",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/js/pages/Home.vue",
+      "resources/js/pages/About.vue",
+      "resources/js/pages/NotFound.vue"
+    ],
+    "css": [
+      "assets/app.aac40b74.css"
+    ]
+  },
+  "resources/js/pages/Home.vue": {
+    "file": "assets/Home.f4f89946.js",
+    "src": "resources/js/pages/Home.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "resources/js/pages/About.vue": {
+    "file": "assets/About.091d6849.js",
+    "src": "resources/js/pages/About.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ]
+  },
+  "resources/js/pages/NotFound.vue": {
+    "file": "assets/NotFound.6ad8d053.js",
+    "src": "resources/js/pages/NotFound.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.js"
+    ]
+  }
+}
